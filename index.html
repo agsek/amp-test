@@ -609,7 +609,7 @@
             font-size: .5rem;
             text-align: center;
             padding: 5px 0;
-            margin: 10px 0;
+            margin: 0;
         }
 
         .header-cnt h1 {
@@ -631,6 +631,42 @@
 
         footer {
             background-color: var(--color-footer-bg);
+            margin: 0;
+            padding: 1rem .5rem;
+            text-align: center;
+        }
+
+        .contact-category-title {
+            margin: 0;
+        }
+
+        .contact-number {
+            margin: 0;
+            font-size: 1.7rem;
+            font-weight: 500;
+        }
+
+        .contact-form {
+            margin-top: 1rem;
+        }
+
+        .footer-button {
+            background-color: #222;
+            color: white;
+            display: block;
+            max-width: 250px;
+            margin: 10px auto 0 auto;
+            padding: 10px;
+            position: relative;
+        }
+
+        .footer-button:after {
+            content: '\2192';
+            font-size: 25px;
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+            top: 4px;
         }
 
         .header-logo amp-img {
@@ -757,6 +793,20 @@
             background: 0 0;
             height: auto;
             width: auto;
+        }
+
+        .footer-social ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-social .facebook {
+            background: url('https://www.mohito.com/skin/frontend/mohito/default/img/svg/fb-ico.svg') no-repeat center center/contain;
+            font-size: 0;
+            width: 20px;
+            height: 20px;
         }
     </style>
 
@@ -1100,7 +1150,6 @@
                 <div class="contact-category">
                     <h3 class="contact-category-title">Bezpłatna infolinia</h3>
                     <h5 class="contact-number"><a href="tel:800 800 022">800 800 022 </a></h5>
-                    <p class="contact-category-description">poniedziałek - piątek 9:00-19:00, sobota 10:00-17:00.</p>
                 </div>
                 <div class="contact-category contact-form" style="order: 1;">
                     <h3 class="contact-category-title">Formularz kontaktowy</h3>
