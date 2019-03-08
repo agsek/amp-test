@@ -11,7 +11,6 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
     <style amp-boilerplate>body {
         -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
         -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -73,10 +72,12 @@
     </noscript>
     <!-- Import other AMP Extensions here -->
 
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+    <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
     <script async custom-element="amp-position-observer"
             src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
@@ -624,7 +625,6 @@
             display: block;
             max-width: 250px;
             margin: 10px auto 0 auto;
-            padding: 10px;
             position: relative;
         }
 
@@ -686,6 +686,7 @@
             background-size: contain;
             font-size: 2em;
         }
+
         .accordion ul {
             list-style: none;
             margin: 0;
@@ -730,6 +731,7 @@
             font-size: 16px;
             font-weight: 700;
         }
+
         .footer .footer-button {
             position: relative;
             display: inline-block;
@@ -742,6 +744,7 @@
             font-size: 16px;
             font-weight: 700;
         }
+
         .footer .footer-button:after {
             display: inline-block;
             position: absolute;
@@ -755,6 +758,7 @@
             height: 100%;
             width: 25px;
         }
+
         .footer-links .accordion-cat-content .footer-button.newsletter:after {
             content: '';
             font-size: 25px;
@@ -770,11 +774,40 @@
             justify-content: center;
         }
 
+        .footer-social li {
+            font-size: 0;
+            width: 50px;
+            height: 50px;
+            margin: 0 10px;
+        }
+
         .footer-social .facebook {
             background: url('https://www.mohito.com/skin/frontend/mohito/default/img/svg/fb-ico.svg') no-repeat center center/contain;
-            font-size: 0;
-            width: 20px;
-            height: 20px;
+        }
+
+        .footer-social .youtube {
+            background: url('https://www.mohito.com/skin/frontend/mohito/default/img/svg/youtube-ico.svg') no-repeat center center/contain;
+        }
+
+        .footer-social .instagram {
+            background: url('https://www.mohito.com/skin/frontend/mohito/default/img/svg/instai-ico.svg') no-repeat center center/contain;
+        }
+
+        .footer-social .pinterest {
+            background: url('https://www.mohito.com/skin/frontend/mohito/default/img/svg/pintrest-ico.svg') no-repeat center center/contain;
+        }
+
+        .footer-address {
+            text-align: center;
+            padding: 10px 50px;
+            line-height: 20px;
+            font-weight: 400;
+            font-size: .7rem;
+        }
+
+        ul.accordion-cat-content {
+            text-align: left;
+            margin: 0 20px;
         }
     </style>
 
@@ -959,7 +992,7 @@
                     width="420" height="560"></amp-img>
         </a>
     </amp-carousel>
-    <div class="carousel-preview">
+    <amp-selector class="carousel-preview">
         <button class="active"
                 [class]="carousel.slide == 0 ? 'active' : ''"
                 on="tap:carousel-with-preview.goToSlide(index=0)"></button>
@@ -971,7 +1004,7 @@
                 on="tap:carousel-with-preview.goToSlide(index=3)"></button>
         <button [class]="carousel.slide == 4 ? 'active' : ''"
                 on="tap:carousel-with-preview.goToSlide(index=4)"></button>
-    </div>
+    </amp-selector>
 </section>
 
 <article class="newsletter-row">
