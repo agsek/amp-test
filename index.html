@@ -82,6 +82,8 @@
             src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
     <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
 
     <style amp-custom>
@@ -96,6 +98,16 @@
             --box-shadow-1: 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 1px -1px rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
         }
 
+        amp-user-notification.sample-notification {
+            padding: var(--space-2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        amp-user-notification.sample-notification > button {
+            min-width: 80px;
+        }
+        
         body {
             font-family: 'Lato', sans-serif;
             color: black;
@@ -1316,6 +1328,14 @@
 
 
 <button id="scrollToTopButton" on="tap:top.scrollTo(duration=200)" class="scrollToTop"></button>
+
+
+<amp-user-notification id="my-notification"
+                       class="sample-notification"
+                       layout="nodisplay">
+    This is an amp-user-notification. It uses local storage to store the dismissed state.
+    <button on="tap:my-notification.dismiss">&#10060;</button>
+</amp-user-notification>
 
 </body>
 
