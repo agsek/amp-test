@@ -322,6 +322,27 @@
             height: auto
         }
 
+        .newsletter-row form .inputs:after {
+            content: '';
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            width: 28px;
+            height: 18px;
+            background: url(https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/newsletter/img/newsletter-email-icon.jpg) center center no-repeat;
+        }
+
+        .newsletter-email {
+            background-color: transparent;
+            color: #000;
+            border: 1px solid #fff;
+        }
+
+        .newsletter-email:-webkit-autofill {
+            -webkit-text-fill-color: #000;
+            transition-delay: 99999s;
+        }
+
         .newsletter-row form .terms {
             display: block;
             text-align: right;
@@ -508,7 +529,7 @@
 
             .newsletter-row .confirmation-text {
                 margin-top: 30px;
-                font-size: 5.5vw
+                font-size: 4.5vw
             }
         }
         /* end of newsletter */
@@ -815,9 +836,8 @@
             font-size: .7rem;
         }
 
-        ul.accordion-cat-content {
-            text-align: left;
-            margin: 0 20px;
+        .tcenter {
+            text-align: center !important;
         }
     </style>
 
@@ -1221,7 +1241,7 @@
                         <section class="accordion-cat">
                             <h4 class="accordion-cat-title">Sklepy stacjonarne</h4>
                             <ul class="accordion-cat-content">
-                                <li><a class="footer-button" title="storelocator"
+                                <li class="tcenter"><a class="footer-button" title="storelocator"
                                        href="https://www.mohito.com/pl/pl/storelocator">Znajdź sklep Mohito</a></li>
                                 <li><a title="Polityka Zwrotów w Salonach - Mohito"
                                        href="https://www.mohito.com/pl/pl/returns-stores">Zwrot i wymiana towaru -
@@ -1264,7 +1284,7 @@
                         <section class="accordion-cat">
                             <h4 class="accordion-cat-title">Newsletter</h4>
                             <div class="accordion-cat-content">
-                                <div class="footer-newsletter">
+                                <div class="footer-newsletter tcenter">
                                     <a href="https://www.mohito.com/pl/pl/newsletter/" class="footer-button newsletter">Zapisz
                                         mnie do newslettera</a>
                                 </div>
