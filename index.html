@@ -103,11 +103,16 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            background: black;
+            color: white;
         }
         amp-user-notification.sample-notification > button {
             min-width: 80px;
+            color: white;
+            background: none;
+            border: 0;
         }
-        
+
         body {
             font-family: 'Lato', sans-serif;
             color: black;
@@ -1333,7 +1338,7 @@
 <amp-user-notification id="my-notification"
                        class="sample-notification"
                        layout="nodisplay">
-    This is an amp-user-notification. It uses local storage to store the dismissed state.
+    Ta strona używa plików „cookies". Informacji zarejestrowanych w plikach "cookies" używamy m.in. w celach reklamowych i statystycznych oraz w celu dostosowania naszych serwisów do indywidualnych potrzeb Użytkowników. Możesz zmienić ustawienia dotyczące "cookies" w swojej przeglądarce internetowej. Jeżeli pozostawisz te ustawienia bez zmian pliki cookies zostaną zapisane w pamięci urządzenia. Zmiana ustawień plików "cookies" może ograniczyć funkcjonalność serwisu.
     <button on="tap:my-notification.dismiss">&#10060;</button>
 </amp-user-notification>
 
