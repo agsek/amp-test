@@ -86,12 +86,12 @@
 
     <style amp-custom>
         :root {
-            --color-primary: #005AF0;
-            --color-secondary: #00DCC0;
+            --color-primary: #005af0;
+            --color-secondary: #00dcc0;
             --color-text-light: #fff;
-            --color-button-bg: #E5E5E5;
+            --color-button-bg: #e5e5e5;
             --color-button-bg-active: rgba(34, 34, 34, 0.5);
-            --color-footer-bg: #F6F4F2;
+            --color-footer-bg: #f6f4f2;
             --space-2: 1rem; /* 16px */
             --box-shadow-1: 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 1px -1px rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
         }
@@ -555,6 +555,17 @@
 
         /* end of newsletter */
 
+        .slider-caption {
+
+        }
+
+        .slider-caption > span {
+            font-weight: bold;
+        }
+
+        .slider-caption > span > small {
+            font-size: 10.8px;
+        }
 
         .scrollToTop {
             color: var(--color-text-light);
@@ -621,6 +632,7 @@
         footer {
             background-color: var(--color-footer-bg);
         }
+
         .header-logo amp-img {
             max-width: 100%;
             max-height: 100%;
@@ -630,6 +642,7 @@
             position: relative;
             overflow: hidden;
         }
+
         .accordion li,
         .footer-links .accordion-cat {
             margin: 0;
@@ -639,10 +652,12 @@
             font-size: 18px;
             font-weight: 400;
         }
+
         .footer-links .accordion-cat {
             display: block;
             box-sizing: border-box;
         }
+
         .footer-links .accordion-cat-title {
             position: relative;
             font-size: 18px;
@@ -652,6 +667,7 @@
             border: 0;
             outline: none;
         }
+
         .footer-links .accordion-cat-title:after {
             content: '';
             position: absolute;
@@ -671,7 +687,8 @@
             margin: 0;
             padding: 0;
         }
-        .footer-links ul li>a {
+
+        .footer-links ul li > a {
             position: relative;
             font-size: .8em;
             padding: 5px 0 0;
@@ -682,7 +699,8 @@
             font-weight: 400;
             color: #222;
         }
-        .footer-links ul li>a:not(.footer-button):after {
+
+        .footer-links ul li > a:not(.footer-button):after {
             content: '';
             position: absolute;
             top: 0;
@@ -697,9 +715,11 @@
             transition: -webkit-transform .5s ease-in-out;
             transition: transform .5s ease-in-out;
         }
+
         .footer-links .accordion-cat:last-child {
             padding-right: 0;
         }
+
         .footer-links .accordion-cat-content .footer-button {
             padding: 0;
             margin: 10px 0;
@@ -723,6 +743,7 @@
             position: absolute;
             right: 10px;
         }
+
         .footer-links .accordion-cat-content .footer-button:after {
             content: '';
             background: url(https://www.mohito.com/skin/frontend/mohito/default/img/svg/search.svg) center no-repeat;
@@ -836,7 +857,8 @@
 <h2>
     <a href="https://www.mohito.com/pl/pl/collection/all/sukienki?place=home&amp;brick=new-0">Nowa Kolekcja</a>
 </h2>
-<amp-carousel height="548"
+
+<amp-carousel height="560"
               layout="fixed-height"
               type="slides"
               loop
@@ -846,25 +868,33 @@
         <amp-img
                 src="https://www.mohito.com/media/catalog/product/cache/thumbnail/427/9df78eab33525d08d6e5fb8d27136e95/V/Y/VY904-MLC-021.jpg"
                 width="380" height="508"></amp-img>
-        Buty <span>149,99<small>PLN</small></span>
+        <div class="slider-caption">
+            Buty <span>149,99 <small>PLN</small></span>
+        </div>
     </a>
     <a href="https://www.mohito.com/pl/pl/un574-08x/linen-rich-cigarette-trousers-with-belt?place=home&brick=new-1">
         <amp-img
                 src="https://www.mohito.com/media/catalog/product/cache/thumbnail/427/9df78eab33525d08d6e5fb8d27136e95/U/N/UN574-08X-001.jpg"
                 width="380" height="508"></amp-img>
-        Spodnie <span>129,99<small>PLN</small></span>
+        <div class="slider-caption">
+            Spodnie <span>129,99 <small>PLN</small></span>
+        </div>
     </a>
     <a href="https://www.mohito.com/pl/pl/wt311-88x/basic-oversized-blouse?place=home&brick=new-1">
         <amp-img
                 src="https://www.mohito.com/media/catalog/product/cache/thumbnail/427/9df78eab33525d08d6e5fb8d27136e95/W/T/WT311-88X-001.jpg"
                 width="380" height="508"></amp-img>
-        Bluzka <span>59,99<small>PLN</small></span>
+        <div class="slider-caption">
+            Bluzka <span>59,99 <small>PLN</small></span>
+        </div>
     </a>
     <a href="https://www.mohito.com/pl/pl/wi140-88x/linen-culotte-trousers-with-belt?place=home&brick=new-1">
         <amp-img
                 src="https://www.mohito.com/media/catalog/product/cache/thumbnail/427/9df78eab33525d08d6e5fb8d27136e95/W/I/WI140-88X-001_1.jpg"
                 width="380" height="508"></amp-img>
-        Spodnie <span>149,99<small>PLN</small></span>
+        <div class="slider-caption">
+            Spodnie <span>149,99 <small>PLN</small></span>
+        </div>
     </a>
 </amp-carousel>
 
@@ -928,20 +958,29 @@
 
 <article class="newsletter-row">
     <div class="mobile-only">
-        <amp-img src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/newsletter/img/newsletter-bag.jpg" width="501" height="393" layout="responsive"></amp-img>
+        <amp-img
+                src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/newsletter/img/newsletter-bag.jpg"
+                width="501" height="393" layout="responsive"></amp-img>
     </div>
     <h2 class="newsletter-title flex-a">
-        <div><span>Zapisz się do newslettera</span><small>Bądź na bieżąco z MOHITO</small></div>
+        <div><span>Zapisz się do newslettera</span>
+            <small>Bądź na bieżąco z MOHITO</small>
+        </div>
     </h2>
-    <form class="flex-c" id="homePageNewsletter" method="post" action-xhr="/components/amp-form/submit-form-input-text-xhr" target="_top">
+    <form class="flex-c" id="homePageNewsletter" method="post"
+          action-xhr="/components/amp-form/submit-form-input-text-xhr" target="_top">
         <div class="newsletter-form-wrapper">
             <div class="inputs">
-                <input type="email" class="newsletter-email ai-trigger-newsletter-email" name="email" id="email" placeholder="Enter e-mail" required><button type="submit" class="newsletter-submit">→</button>
+                <input type="email" class="newsletter-email ai-trigger-newsletter-email" name="email" id="email"
+                       placeholder="Enter e-mail" required>
+                <button type="submit" class="newsletter-submit">→</button>
             </div>
             <div class="terms">
-                <input type="checkbox" name="newsletter-terms" class="newsletter-terms ai-trigger-newsletter-terms" id="newsletterTerms" required>
+                <input type="checkbox" name="newsletter-terms" class="newsletter-terms ai-trigger-newsletter-terms"
+                       id="newsletterTerms" required>
                 <label class="newsletter-terms-label" for="newsletterTerms">
-                    Akceptuję <a href="https://www.mohito.com/pl/pl/newsletter-terms/" target="_blank">warunki newslettera</a>
+                    Akceptuję <a href="https://www.mohito.com/pl/pl/newsletter-terms/"
+                                 target="_blank">warunki newslettera</a>
                 </label>
             </div>
             <input type="hidden" name="subscriptionPlace" id="subscriptionPlace" value="home-page">
@@ -1075,9 +1114,11 @@
                                                 target="_blank">Facebook</a></li>
                         <li class="youtube"><a href="https://www.youtube.com/user/mohitofashion"
                                                target="_blank">YouTube</a></li>
-                        <li class="instagram"><a href="https://www.instagram.com/mohitofashion/" target="_blank">Instagram</a>
+                        <li class="instagram"><a href="https://www.instagram.com/mohitofashion/"
+                                                 target="_blank">Instagram</a>
                         </li>
-                        <li class="pinterest"><a href="https://www.pinterest.com/mohitofashion/" target="_blank">Pinterest</a>
+                        <li class="pinterest"><a href="https://www.pinterest.com/mohitofashion/"
+                                                 target="_blank">Pinterest</a>
                         </li>
                     </ul>
                 </div>
@@ -1138,7 +1179,8 @@
                         <section class="accordion-cat">
                             <h4 class="accordion-cat-title">Moje konto</h4>
                             <ul class="accordion-cat-content">
-                                <li><a title="Zamówienia" href="https://www.mohito.com/pl/pl/sales/order/history/">Zamówienia</a>
+                                <li><a title="Zamówienia"
+                                       href="https://www.mohito.com/pl/pl/sales/order/history/">Zamówienia</a>
                                 </li>
                                 <li><a title="Ustawienia mojego konta"
                                        href="https://www.mohito.com/pl/pl/customer/account/edit/">Ustawienia mojego
