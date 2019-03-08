@@ -12,7 +12,65 @@
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-boilerplate>body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+        from {
+            visibility: hidden
+        }
+        to {
+            visibility: visible
+        }
+    }
+
+    @-moz-keyframes -amp-start {
+        from {
+            visibility: hidden
+        }
+        to {
+            visibility: visible
+        }
+    }
+
+    @-ms-keyframes -amp-start {
+        from {
+            visibility: hidden
+        }
+        to {
+            visibility: visible
+        }
+    }
+
+    @-o-keyframes -amp-start {
+        from {
+            visibility: hidden
+        }
+        to {
+            visibility: visible
+        }
+    }
+
+    @keyframes -amp-start {
+        from {
+            visibility: hidden
+        }
+        to {
+            visibility: visible
+        }
+    }</style>
+    <noscript>
+        <style amp-boilerplate>body {
+            -webkit-animation: none;
+            -moz-animation: none;
+            -ms-animation: none;
+            animation: none
+        }</style>
+    </noscript>
     <!-- Import other AMP Extensions here -->
 
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
@@ -20,7 +78,8 @@
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
     <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
-    <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+    <script async custom-element="amp-position-observer"
+            src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
     <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
 
@@ -32,8 +91,9 @@
             --color-text-light: #fff;
             --color-button-bg: #E5E5E5;
             --color-button-bg-active: rgba(34, 34, 34, 0.5);
-            --space-2: 1rem;   /* 16px */
-            --box-shadow-1: 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 1px -1px rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+            --color-footer-bg: #F6F4F2;
+            --space-2: 1rem; /* 16px */
+            --box-shadow-1: 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 1px -1px rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
         }
 
         body {
@@ -77,13 +137,11 @@
         }
 
         .main-header .cart {
-            background: url('https://www.mohito.com/skin/frontend/mohito/default/img/svg/icon-cart.svg')
-            no-repeat center center/contain;
+            background: url('https://www.mohito.com/skin/frontend/mohito/default/img/svg/icon-cart.svg') no-repeat center center/contain;
         }
 
         .main-header .log-in {
-            background: url('https://www.mohito.com/skin/frontend/mohito/default/img/svg/icon-user.svg')
-            no-repeat center center/contain;
+            background: url('https://www.mohito.com/skin/frontend/mohito/default/img/svg/icon-user.svg') no-repeat center center/contain;
         }
 
         .sidebar {
@@ -166,19 +224,338 @@
         form.amp-form-submit-success > .newsletter-form-wrapper {
             display: none;
         }
-    .newsletter-row{background-color:#f6f4f2;margin:0 auto 30px;padding:25px 30px;max-width:1260px;display:flex;flex-wrap:wrap;flex-direction:column;justify-content:center;align-content:space-between;height:270px}html[lang=ru] .newsletter-row{height:350px}.newsletter-row h2{font-size:1.7vw;font-weight:700;line-height:normal;text-transform:none;margin:0}.newsletter-row h2 small{font-size:1.1vw;display:block}.newsletter-row img{display:inline-block;max-height:100%}.newsletter-row .flex-a,.newsletter-row .flex-b,.newsletter-row .flex-c{width:33%}.newsletter-row .flex-b{height:100%;text-align:center}.newsletter-row form{width:32%;color:#222;margin:0}.newsletter-row form .newsletter-email,.newsletter-row form .newsletter-submit{line-height:30px;padding:4px 10px;border:2px solid #222;background-color:#f6f4f2;display:inline-block;vertical-align:top;border-radius:0}.newsletter-row form .newsletter-email{min-width:50%;width:calc(100% - 48px);font-size:16px;background:url(https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/newsletter/img/newsletter-email-icon.jpg) 10px center no-repeat;padding-left:50px;float:none;box-sizing:border-box}.newsletter-row form .newsletter-email::-webkit-input-placeholder{color:#555}.newsletter-row form .newsletter-email::-moz-placeholder{color:#555}.newsletter-row form .newsletter-email:-ms-input-placeholder{color:#555}.newsletter-row form .newsletter-email:-moz-placeholder{color:#555}.newsletter-row form .newsletter-email.error,.newsletter-row form .newsletter-email.has-error{margin-bottom:25px;border-color:red}.newsletter-row form .newsletter-email.error~.newsletter-submit{border-color:#ff0006}.newsletter-row form .newsletter-email.error~.newsletter-terms-label{padding-bottom:40px}.newsletter-row form .newsletter-email~label.error,.newsletter-row form .newsletter-terms~label.error{position:absolute;top:100%;right:0;text-transform:uppercase;color:#ff0006;font-weight:600;font-size:10px;margin-top:-20px;margin-right:2px}.newsletter-row form .newsletter-terms~label.error{margin-top:2px;line-height:15px}.newsletter-row form .newsletter-submit{border-left:0;background-size:50%;min-width:40px;cursor:pointer;font-size:20px;margin-left:0}.newsletter-row form .inputs{position:relative;height:auto}.newsletter-row form .terms{display:block;text-align:right;padding-right:2px;position:relative;margin-top:10px}.newsletter-row form .terms a{text-decoration:underline}.newsletter-row form .terms .newsletter-terms{position:absolute;z-index:-1;opacity:0;top:0;left:0}.newsletter-row form .terms .newsletter-terms:checked~.newsletter-terms-label,.newsletter-row form .terms .newsletter-terms:not(:checked)~.newsletter-terms-label{position:relative;padding-left:1.95em;cursor:pointer}.newsletter-row form .terms .newsletter-terms:checked~.newsletter-terms-label:before,.newsletter-row form .terms .newsletter-terms:not(:checked)~.newsletter-terms-label:before{content:'';position:absolute;left:0;top:-2px;width:10px;height:10px;border:2px solid #000;background:#f6f4f2}.newsletter-row form .terms .newsletter-terms:checked~.newsletter-terms-label:after,.newsletter-row form .terms .newsletter-terms:not(:checked)~.newsletter-terms-label:after{content:'✔';position:absolute;top:1px;left:2px;font-size:13px;line-height:.8;color:#222;transition:all .2s;font-family:Helvetica,Arial,sans-serif}.newsletter-row form .terms .newsletter-terms:not(:checked)~.newsletter-terms-label:after{opacity:0;transform:scale(0)}.newsletter-row form .terms .newsletter-terms:checked~.newsletter-terms-label:after{opacity:1;transform:scale(1)}.newsletter-row .rules{text-decoration:none;padding-bottom:2px;border-bottom:1px solid #222;display:inline-block}.newsletter-row .rules:hover{border-bottom:1px solid rgba(34,34,34,.5)}.newsletter-row .confirmation-text,.newsletter-row .mobile-only{display:none}.newsletter-row .confirmation-text{font-size:1.7vw}@media screen and (max-width:1024px){.newsletter-row h2{font-size:3.5vw}.newsletter-row h2 small{font-size:2vw}.newsletter-row .flex-a,.newsletter-row .flex-c{flex:0 0 50%;order:2;width:55%}html[lang=ru] .newsletter-row .flex-a,html[lang=ru] .newsletter-row .flex-c{flex:0 0 60%}.newsletter-row .flex-a div{display:flex;justify-content:center;height:100%;flex-direction:column}.newsletter-row .flex-b{flex:0 0 100%;order:1;max-height:100%;text-align:center;width:45%}html[lang=ru] .newsletter-row .flex-c{flex:0 0 40%}.newsletter-row .confirmation-text{font-size:2.5vw}}@media screen and (max-width:768px){.newsletter-row{margin:30px 15px;padding:15px 15px 30px}.newsletter-row form .newsletter-email{font-size:13px}}@media screen and (max-width:480px){.newsletter-row{display:block;height:auto}.newsletter-row h2{width:58%;font-size:5.5vw;line-height:5.5vw}.newsletter-row h2 small{font-size:65%;margin-top:15px}.newsletter-row img{width:37%;margin-left:4%}.newsletter-row form{width:100%;margin:25px 0 5px}.newsletter-row form .inputs,.newsletter-row form .terms{z-index:10}.newsletter-row .rules{margin-left:100%;transform:translateX(-105%);white-space:nowrap}.newsletter-row .flex-a{margin-top:20px}.newsletter-row .flex-a,.newsletter-row .flex-b,.newsletter-row .flex-c{width:auto}.newsletter-row .flex-b{display:none}.newsletter-row .mobile-only{display:block;float:right;width:37%;height:auto}.newsletter-row .mobile-only img{width:auto}.newsletter-row .confirmation-text{margin-top:30px;font-size:5.5vw}}
-    /* end of newsletter */
+
+        .newsletter-row {
+            background-color: #f6f4f2;
+            margin: 0 auto 30px;
+            padding: 25px 30px;
+            max-width: 1260px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-content: space-between;
+            height: 270px
+        }
+
+        html[lang=ru] .newsletter-row {
+            height: 350px
+        }
+
+        .newsletter-row h2 {
+            font-size: 1.7vw;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: none;
+            margin: 0
+        }
+
+        .newsletter-row h2 small {
+            font-size: 1.1vw;
+            display: block
+        }
+
+        .newsletter-row img {
+            display: inline-block;
+            max-height: 100%
+        }
+
+        .newsletter-row .flex-a, .newsletter-row .flex-b, .newsletter-row .flex-c {
+            width: 33%
+        }
+
+        .newsletter-row .flex-b {
+            height: 100%;
+            text-align: center
+        }
+
+        .newsletter-row form {
+            width: 32%;
+            color: #222;
+            margin: 0
+        }
+
+        .newsletter-row form .newsletter-email, .newsletter-row form .newsletter-submit {
+            line-height: 30px;
+            padding: 4px 10px;
+            border: 2px solid #222;
+            background-color: #f6f4f2;
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 0
+        }
+
+        .newsletter-row form .newsletter-email {
+            min-width: 50%;
+            width: calc(100% - 48px);
+            font-size: 16px;
+            background: url(https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/newsletter/img/newsletter-email-icon.jpg) 10px center no-repeat;
+            padding-left: 50px;
+            float: none;
+            box-sizing: border-box
+        }
+
+        .newsletter-row form .newsletter-email::-webkit-input-placeholder {
+            color: #555
+        }
+
+        .newsletter-row form .newsletter-email::-moz-placeholder {
+            color: #555
+        }
+
+        .newsletter-row form .newsletter-email:-ms-input-placeholder {
+            color: #555
+        }
+
+        .newsletter-row form .newsletter-email:-moz-placeholder {
+            color: #555
+        }
+
+        .newsletter-row form .newsletter-email.error, .newsletter-row form .newsletter-email.has-error {
+            margin-bottom: 25px;
+            border-color: red
+        }
+
+        .newsletter-row form .newsletter-email.error ~ .newsletter-submit {
+            border-color: #ff0006
+        }
+
+        .newsletter-row form .newsletter-email.error ~ .newsletter-terms-label {
+            padding-bottom: 40px
+        }
+
+        .newsletter-row form .newsletter-email ~ label.error, .newsletter-row form .newsletter-terms ~ label.error {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            text-transform: uppercase;
+            color: #ff0006;
+            font-weight: 600;
+            font-size: 10px;
+            margin-top: -20px;
+            margin-right: 2px
+        }
+
+        .newsletter-row form .newsletter-terms ~ label.error {
+            margin-top: 2px;
+            line-height: 15px
+        }
+
+        .newsletter-row form .newsletter-submit {
+            border-left: 0;
+            background-size: 50%;
+            min-width: 40px;
+            cursor: pointer;
+            font-size: 20px;
+            margin-left: 0
+        }
+
+        .newsletter-row form .inputs {
+            position: relative;
+            height: auto
+        }
+
+        .newsletter-row form .terms {
+            display: block;
+            text-align: right;
+            padding-right: 2px;
+            position: relative;
+            margin-top: 10px
+        }
+
+        .newsletter-row form .terms a {
+            text-decoration: underline
+        }
+
+        .newsletter-row form .terms .newsletter-terms {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            top: 0;
+            left: 0
+        }
+
+        .newsletter-row form .terms .newsletter-terms:checked ~ .newsletter-terms-label, .newsletter-row form .terms .newsletter-terms:not(:checked) ~ .newsletter-terms-label {
+            position: relative;
+            padding-left: 1.95em;
+            cursor: pointer
+        }
+
+        .newsletter-row form .terms .newsletter-terms:checked ~ .newsletter-terms-label:before, .newsletter-row form .terms .newsletter-terms:not(:checked) ~ .newsletter-terms-label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -2px;
+            width: 10px;
+            height: 10px;
+            border: 2px solid #000;
+            background: #f6f4f2
+        }
+
+        .newsletter-row form .terms .newsletter-terms:checked ~ .newsletter-terms-label:after, .newsletter-row form .terms .newsletter-terms:not(:checked) ~ .newsletter-terms-label:after {
+            content: '✔';
+            position: absolute;
+            top: 1px;
+            left: 2px;
+            font-size: 13px;
+            line-height: .8;
+            color: #222;
+            transition: all .2s;
+            font-family: Helvetica, Arial, sans-serif
+        }
+
+        .newsletter-row form .terms .newsletter-terms:not(:checked) ~ .newsletter-terms-label:after {
+            opacity: 0;
+            transform: scale(0)
+        }
+
+        .newsletter-row form .terms .newsletter-terms:checked ~ .newsletter-terms-label:after {
+            opacity: 1;
+            transform: scale(1)
+        }
+
+        .newsletter-row .rules {
+            text-decoration: none;
+            padding-bottom: 2px;
+            border-bottom: 1px solid #222;
+            display: inline-block
+        }
+
+        .newsletter-row .rules:hover {
+            border-bottom: 1px solid rgba(34, 34, 34, .5)
+        }
+
+        .newsletter-row .confirmation-text, .newsletter-row .mobile-only {
+            display: none
+        }
+
+        .newsletter-row .confirmation-text {
+            font-size: 1.7vw
+        }
+
+        @media screen and (max-width: 1024px) {
+            .newsletter-row h2 {
+                font-size: 3.5vw
+            }
+
+            .newsletter-row h2 small {
+                font-size: 2vw
+            }
+
+            .newsletter-row .flex-a, .newsletter-row .flex-c {
+                flex: 0 0 50%;
+                order: 2;
+                width: 55%
+            }
+
+            html[lang=ru] .newsletter-row .flex-a, html[lang=ru] .newsletter-row .flex-c {
+                flex: 0 0 60%
+            }
+
+            .newsletter-row .flex-a div {
+                display: flex;
+                justify-content: center;
+                height: 100%;
+                flex-direction: column
+            }
+
+            .newsletter-row .flex-b {
+                flex: 0 0 100%;
+                order: 1;
+                max-height: 100%;
+                text-align: center;
+                width: 45%
+            }
+
+            html[lang=ru] .newsletter-row .flex-c {
+                flex: 0 0 40%
+            }
+
+            .newsletter-row .confirmation-text {
+                font-size: 2.5vw
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .newsletter-row {
+                margin: 30px 15px;
+                padding: 15px 15px 30px
+            }
+
+            .newsletter-row form .newsletter-email {
+                font-size: 13px
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .newsletter-row {
+                display: block;
+                height: auto
+            }
+
+            .newsletter-row h2 {
+                width: 58%;
+                font-size: 5.5vw;
+                line-height: 5.5vw
+            }
+
+            .newsletter-row h2 small {
+                font-size: 65%;
+                margin-top: 15px
+            }
+
+            .newsletter-row img {
+                width: 37%;
+                margin-left: 4%
+            }
+
+            .newsletter-row form {
+                width: 100%;
+                margin: 25px 0 5px
+            }
+
+            .newsletter-row form .inputs, .newsletter-row form .terms {
+                z-index: 10
+            }
+
+            .newsletter-row .rules {
+                margin-left: 100%;
+                transform: translateX(-105%);
+                white-space: nowrap
+            }
+
+            .newsletter-row .flex-a {
+                margin-top: 20px
+            }
+
+            .newsletter-row .flex-a, .newsletter-row .flex-b, .newsletter-row .flex-c {
+                width: auto
+            }
+
+            .newsletter-row .flex-b {
+                display: none
+            }
+
+            .newsletter-row .mobile-only {
+                display: block;
+                float: right;
+                width: 37%;
+                height: auto
+            }
+
+            .newsletter-row .mobile-only img {
+                width: auto
+            }
+
+            .newsletter-row .confirmation-text {
+                margin-top: 30px;
+                font-size: 5.5vw
+            }
+        }
+
+        /* end of newsletter */
 
 
-
-
-    :root {
-      --color-primary: #005AF0;
-      --color-secondary: #00DCC0;
-      --color-text-light: #fff;
-      --space-2: 1rem;   /* 16px */
-      --box-shadow-1: 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 1px -1px rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-    }
         .scrollToTop {
             color: var(--color-text-light);
             font-size: 1.4em;
@@ -196,29 +573,54 @@
             opacity: 0;
             visibility: hidden;
         }
+
         .spacer {
             width: 100vw;
             max-width: 700px;
             height: 200vh;
             background-color: var(--color-secondary);
         }
+
         /* we move the anchor down to componsate the fixed header */
         .target {
             position: relative;
         }
+
         .target-anchor {
             position: absolute;
             top: -72px;
             left: 0;
         }
 
-    .header-logo {
-      height: 45px;
-      width: 150px;
-      padding: 11px 9px 9px 9px;
-      box-sizing: border-box;
-    }
+        .header-cnt {
+            background-color: black;
+            color: white;
+            font-size: .5rem;
+            text-align: center;
+            padding: 5px 0;
+            margin: 10px 0;
+        }
 
+        .header-cnt h1 {
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .header-logo {
+            height: 45px;
+            width: 150px;
+            padding: 11px 9px 9px 9px;
+            box-sizing: border-box;
+        }
+
+        .header-logo amp-img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        footer {
+            background-color: var(--color-footer-bg);
+        }
     .header-logo amp-img {
       max-width: 100%;
       max-height: 100%;
@@ -329,9 +731,10 @@
 <header id="top" class="main-header flex">
     <section class="flex">
         <button type="button" on="tap:sidebar.toggle">&#9776;</button>
-      <a class="header-logo" href="https://www.mohito.com/pl/pl/" title="Mohito">
-        <amp-img src="https://www.mohito.com/skin/frontend/mohito/default/img/logo.png" width="392" height="66"></amp-img>
-      </a>
+        <a class="header-logo" href="https://www.mohito.com/pl/pl/" title="Mohito">
+            <amp-img src="https://www.mohito.com/skin/frontend/mohito/default/img/logo.png" width="392"
+                     height="66"></amp-img>
+        </a>
     </section>
     <section class="flex">
         <a href="https://www.mohito.com/pl/pl/customer/account/login/uenc/aHR0cHM6Ly93d3cubW9oaXRvLmNvbS9wbC9wbC8,/"
@@ -378,34 +781,39 @@
               class="carousel"
 >
     <a href="https://www.mohito.com/pl/pl/collection/all/sukienki?place=home&brick=slider-1">
-        <amp-img src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/slider/dd032019/mobile-pl.jpg"
-                 layout="responsive"
-                 width="400"
-                 height="400"></amp-img>
+        <amp-img
+                src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/slider/dd032019/mobile-pl.jpg"
+                layout="responsive"
+                width="400"
+                height="400"></amp-img>
     </a>
     <a href="https://www.mohito.com/pl/pl/collection/all/new-eu?place=home&brick=slider-2">
-        <amp-img src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/slider/newColss19/mobile-pl.jpg"
-                 layout="responsive"
-                 width="400"
-                 height="400"></amp-img>
+        <amp-img
+                src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/slider/newColss19/mobile-pl.jpg"
+                layout="responsive"
+                width="400"
+                height="400"></amp-img>
     </a>
     <a href="https://www.mohito.com/pl/pl/lookbook/spring-19?place=home&brick=slider-3">
-        <amp-img src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/slider/springss19/mobile-pl1.jpg"
-                 layout="responsive"
-                 width="400"
-                 height="400"></amp-img>
+        <amp-img
+                src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/slider/springss19/mobile-pl1.jpg"
+                layout="responsive"
+                width="400"
+                height="400"></amp-img>
     </a>
     <a href="https://www.mohito.com/pl/pl/collection/selected-trends?place=home&brick=slider-4">
-        <amp-img src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/slider/newTrendss19/mobile-pl.jpg"
-                 layout="responsive"
-                 width="400"
-                 height="400"></amp-img>
+        <amp-img
+                src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/slider/newTrendss19/mobile-pl.jpg"
+                layout="responsive"
+                width="400"
+                height="400"></amp-img>
     </a>
     <a href="https://www.mohito.com/pl/pl/visa-oferty?place=home&brick=slider-5">
-        <amp-img src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/slider/mobile_visaoferty.png"
-                 layout="responsive"
-                 width="400"
-                 height="400"></amp-img>
+        <amp-img
+                src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/slider/mobile_visaoferty.png"
+                layout="responsive"
+                width="400"
+                height="400"></amp-img>
     </a>
 </amp-carousel>
 
@@ -419,25 +827,37 @@
               autoplay
               class="carousel">
     <a href="https://www.mohito.com/pl/pl/vy904-mlc/thick-soled-trainers?place=home&brick=new-1">
-        <amp-img src="https://www.mohito.com/media/catalog/product/cache/thumbnail/427/9df78eab33525d08d6e5fb8d27136e95/V/Y/VY904-MLC-021.jpg" width="380" height="508"></amp-img>
+        <amp-img
+                src="https://www.mohito.com/media/catalog/product/cache/thumbnail/427/9df78eab33525d08d6e5fb8d27136e95/V/Y/VY904-MLC-021.jpg"
+                width="380" height="508"></amp-img>
         Buty <span>149,99<small>PLN</small></span>
     </a>
     <a href="https://www.mohito.com/pl/pl/un574-08x/linen-rich-cigarette-trousers-with-belt?place=home&brick=new-1">
-        <amp-img src="https://www.mohito.com/media/catalog/product/cache/thumbnail/427/9df78eab33525d08d6e5fb8d27136e95/U/N/UN574-08X-001.jpg" width="380" height="508"></amp-img>
+        <amp-img
+                src="https://www.mohito.com/media/catalog/product/cache/thumbnail/427/9df78eab33525d08d6e5fb8d27136e95/U/N/UN574-08X-001.jpg"
+                width="380" height="508"></amp-img>
         Spodnie <span>129,99<small>PLN</small></span>
     </a>
     <a href="https://www.mohito.com/pl/pl/wt311-88x/basic-oversized-blouse?place=home&brick=new-1">
-        <amp-img src="https://www.mohito.com/media/catalog/product/cache/thumbnail/427/9df78eab33525d08d6e5fb8d27136e95/W/T/WT311-88X-001.jpg" width="380" height="508"></amp-img>
+        <amp-img
+                src="https://www.mohito.com/media/catalog/product/cache/thumbnail/427/9df78eab33525d08d6e5fb8d27136e95/W/T/WT311-88X-001.jpg"
+                width="380" height="508"></amp-img>
         Bluzka <span>59,99<small>PLN</small></span>
     </a>
     <a href="https://www.mohito.com/pl/pl/wi140-88x/linen-culotte-trousers-with-belt?place=home&brick=new-1">
-        <amp-img src="https://www.mohito.com/media/catalog/product/cache/thumbnail/427/9df78eab33525d08d6e5fb8d27136e95/W/I/WI140-88X-001_1.jpg" width="380" height="508"></amp-img>
+        <amp-img
+                src="https://www.mohito.com/media/catalog/product/cache/thumbnail/427/9df78eab33525d08d6e5fb8d27136e95/W/I/WI140-88X-001_1.jpg"
+                width="380" height="508"></amp-img>
         Spodnie <span>149,99<small>PLN</small></span>
     </a>
 </amp-carousel>
 
 <section class="get-inspired">
-    <amp-state id="carousel"><script type="application/json"> {"slide": 0} </script></amp-state>
+    <amp-state id="carousel">
+        <script type="application/json"> {
+            "slide": 0
+        } </script>
+    </amp-state>
     <h2>
         <a href="https://www.mohito.com/pl/pl/collection/all/sukienki?place=home&amp;brick=gi-0">Get Inspired</a>
     </h2>
@@ -450,19 +870,29 @@
                   id="carousel-with-preview"
                   on="slideChange:AMP.setState({carousel: {slide: event.index}})">
         <a href="https://www.mohito.com/pl/pl/collection/all/sukienki?place=home&brick=gi-1">
-            <amp-img src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/get-inspired/getInspired0214/get-inspired-1.jpg" width="420" height="560"></amp-img>
+            <amp-img
+                    src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/get-inspired/getInspired0214/get-inspired-1.jpg"
+                    width="420" height="560"></amp-img>
         </a>
         <a href="https://www.mohito.com/pl/pl/collection/all/akcesoria?place=home&brick=gi-2">
-            <amp-img src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/get-inspired/getInspired0214/get-inspired-2.jpg" width="420" height="560"></amp-img>
+            <amp-img
+                    src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/get-inspired/getInspired0214/get-inspired-2.jpg"
+                    width="420" height="560"></amp-img>
         </a>
         <a href="https://www.mohito.com/pl/pl/collection/all/swetry-bluzy?place=home&brick=gi-3">
-            <amp-img src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/get-inspired/getInspired0214/get-inspired-3.jpg" width="420" height="560"></amp-img>
+            <amp-img
+                    src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/get-inspired/getInspired0214/get-inspired-3.jpg"
+                    width="420" height="560"></amp-img>
         </a>
         <a href="https://www.mohito.com/pl/pl/collection/all/koszule?place=home&brick=gi-4">
-            <amp-img src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/get-inspired/getInspired0214/get-inspired-4.jpg" width="420" height="560"></amp-img>
+            <amp-img
+                    src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/get-inspired/getInspired0214/get-inspired-4.jpg"
+                    width="420" height="560"></amp-img>
         </a>
         <a href="https://www.mohito.com/pl/pl/collection/all/marynarki?place=home&brick=gi-5">
-            <amp-img src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/get-inspired/getInspired0214/get-inspired-5.jpg" width="420" height="560"></amp-img>
+            <amp-img
+                    src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/get-inspired/getInspired0214/get-inspired-5.jpg"
+                    width="420" height="560"></amp-img>
         </a>
     </amp-carousel>
     <div class="carousel-preview">
@@ -510,6 +940,11 @@
 </article>
 
 <section class="instagram">
+    <amp-state id="instagram">
+        <script type="application/json"> {
+            "slide": 0
+        } </script>
+    </amp-state>
     <h2>
         @mohitofashion
     </h2>
@@ -521,26 +956,40 @@
                   layout="responsive"
                   type="slides"
                   class="carousel"
+                  id="instagram-with-preview"
+                  on="slideChange:AMP.setState({instagram: {slide: event.index}})"
     >
         <a href="https://www.mohito.com/pl/pl/collection/all/sukienki?place=home&brick=slider-1">
-            <amp-img src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/instagram/400pxx400px1.jpg"
-                     layout="responsive"
-                     width="400"
-                     height="400"></amp-img>
+            <amp-img
+                    src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/instagram/400pxx400px1.jpg"
+                    layout="responsive"
+                    width="400"
+                    height="400"></amp-img>
         </a>
         <a href="https://www.mohito.com/pl/pl/collection/all/new-eu?place=home&brick=slider-2">
-            <amp-img src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/instagram/400pxx400px2.jpg"
-                     layout="responsive"
-                     width="400"
-                     height="400"></amp-img>
+            <amp-img
+                    src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/instagram/400pxx400px2.jpg"
+                    layout="responsive"
+                    width="400"
+                    height="400"></amp-img>
         </a>
         <a href="https://www.mohito.com/pl/pl/lookbook/spring-19?place=home&brick=slider-3">
-            <amp-img src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/instagram/400pxx400px3.jpg"
-                     layout="responsive"
-                     width="400"
-                     height="400"></amp-img>
+            <amp-img
+                    src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/img/instagram/400pxx400px3.jpg"
+                    layout="responsive"
+                    width="400"
+                    height="400"></amp-img>
         </a>
     </amp-carousel>
+    <div class="carousel-preview">
+        <button class="active"
+                [class]="instagram.slide == 0 ? 'active' : ''"
+                on="tap:instagram-with-preview.goToSlide(index=0)"></button>
+        <button [class]="instagram.slide == 1 ? 'active' : ''"
+                on="tap:instagram-with-preview.goToSlide(index=1)"></button>
+        <button [class]="instagram.slide == 2 ? 'active' : ''"
+                on="tap:instagram-with-preview.goToSlide(index=2)"></button>
+    </div>
 </section>
 
 <amp-animation id="showAnim" layout="nodisplay">
@@ -554,7 +1003,10 @@
                 {
                     "selector": "#scrollToTopButton",
                     "keyframes": [
-                        { "opacity": "1", "visibility": "visible" }
+                        {
+                            "opacity": "1",
+                            "visibility": "visible"
+                        }
                     ]
                 }
             ]
@@ -572,7 +1024,10 @@
                 {
                     "selector": "#scrollToTopButton",
                     "keyframes": [
-                        { "opacity": "0", "visibility": "hidden" }
+                        {
+                            "opacity": "0",
+                            "visibility": "hidden"
+                        }
                     ]
                 }
             ]
@@ -600,10 +1055,14 @@
                 <div class="footer-social" data-static="mo-footer-social">
                     <h3 class="social-title">Social media</h3>
                     <ul>
-                        <li class="facebook"><a href="https://www.facebook.com/Mohito.Fashion/" target="_blank">Facebook</a></li>
-                        <li class="youtube"><a href="https://www.youtube.com/user/mohitofashion" target="_blank">YouTube</a></li>
-                        <li class="instagram"><a href="https://www.instagram.com/mohitofashion/" target="_blank">Instagram</a></li>
-                        <li class="pinterest"><a href="https://www.pinterest.com/mohitofashion/" target="_blank">Pinterest</a></li>
+                        <li class="facebook"><a href="https://www.facebook.com/Mohito.Fashion/"
+                                                target="_blank">Facebook</a></li>
+                        <li class="youtube"><a href="https://www.youtube.com/user/mohitofashion"
+                                               target="_blank">YouTube</a></li>
+                        <li class="instagram"><a href="https://www.instagram.com/mohitofashion/" target="_blank">Instagram</a>
+                        </li>
+                        <li class="pinterest"><a href="https://www.pinterest.com/mohitofashion/" target="_blank">Pinterest</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -613,37 +1072,63 @@
                         <section class="accordion-cat">
                             <h4 class="accordion-cat-title">Przewodnik po zakupach</h4>
                             <ul class="accordion-cat-content">
-                                <li><a title="Jak kupować" href="https://www.mohito.com/pl/pl/how-to-buy">Jak kupować w sklepie internetowym?</a></li>
-                                <li><a title="FAQ" href="https://www.mohito.com/pl/pl/faq">FAQ - Najczęściej zadawane pytania</a></li>
-                                <li><a title="Promocje - FAQ" href="https://www.mohito.com/pl/pl/qaspecjalne">Akcje promocyjne – najczęściej zadawane pytania</a></li>
-                                <li><a title="Płatności - Mohito" href="https://www.mohito.com/pl/pl/payments">Formy płatności</a></li>
-                                <li><a title="Koszt i czas dostawy - Mohito" href="https://www.mohito.com/pl/pl/shipping">Koszt i czas dostawy</a></li>
-                                <li><a title="Tabele rozmiarowe - Mohito" href="https://www.mohito.com/pl/pl/size-guide">Tabele rozmiarowe</a></li>
-                                <li><a href="https://www.mohito.com/pl/pl/returns">Zwrot, wymiana i reklamacja towaru - Esklep</a></li>
-                                <li><a title="Odstąpienie od umowy - Mohito" href="https://www.mohito.com/pl/pl/withdrawal">Odstąpienie od umowy</a></li>
-                                <li><a title="Regulamin - Mohito" href="https://www.mohito.com/pl/pl/terms">Regulamin</a></li>
-                                <li><a title="Polityka prywatności - Mohito" href="https://www.mohito.com/pl/pl/privacy-policy">Polityka prywatności</a></li>
-                                <li><a title="No Fur - Mohito" href="https://www.mohito.com/pl/pl/no-fur">Kolekcje MOHITO wolne od naturalnych futer!</a></li>
-                                <li><a title="Konserwacja - Mohito" href="https://www.mohito.com/pl/pl/kurtki-puchowe">Jak konserwować kurtki puchowe?</a></li>
+                                <li><a title="Jak kupować" href="https://www.mohito.com/pl/pl/how-to-buy">Jak kupować w
+                                    sklepie internetowym?</a></li>
+                                <li><a title="FAQ" href="https://www.mohito.com/pl/pl/faq">FAQ - Najczęściej zadawane
+                                    pytania</a></li>
+                                <li><a title="Promocje - FAQ" href="https://www.mohito.com/pl/pl/qaspecjalne">Akcje
+                                    promocyjne – najczęściej zadawane pytania</a></li>
+                                <li><a title="Płatności - Mohito" href="https://www.mohito.com/pl/pl/payments">Formy
+                                    płatności</a></li>
+                                <li><a title="Koszt i czas dostawy - Mohito"
+                                       href="https://www.mohito.com/pl/pl/shipping">Koszt i czas dostawy</a></li>
+                                <li><a title="Tabele rozmiarowe - Mohito"
+                                       href="https://www.mohito.com/pl/pl/size-guide">Tabele rozmiarowe</a></li>
+                                <li><a href="https://www.mohito.com/pl/pl/returns">Zwrot, wymiana i reklamacja towaru -
+                                    Esklep</a></li>
+                                <li><a title="Odstąpienie od umowy - Mohito"
+                                       href="https://www.mohito.com/pl/pl/withdrawal">Odstąpienie od umowy</a></li>
+                                <li><a title="Regulamin - Mohito"
+                                       href="https://www.mohito.com/pl/pl/terms">Regulamin</a></li>
+                                <li><a title="Polityka prywatności - Mohito"
+                                       href="https://www.mohito.com/pl/pl/privacy-policy">Polityka prywatności</a></li>
+                                <li><a title="No Fur - Mohito" href="https://www.mohito.com/pl/pl/no-fur">Kolekcje
+                                    MOHITO wolne od naturalnych futer!</a></li>
+                                <li><a title="Konserwacja - Mohito" href="https://www.mohito.com/pl/pl/kurtki-puchowe">Jak
+                                    konserwować kurtki puchowe?</a></li>
                             </ul>
                         </section>
                         <section class="accordion-cat">
                             <h4 class="accordion-cat-title">Sklepy stacjonarne</h4>
                             <ul class="accordion-cat-content">
-                                <li><a class="footer-button" title="storelocator" href="https://www.mohito.com/pl/pl/storelocator">Znajdź sklep Mohito</a></li>
-                                <li><a title="Polityka Zwrotów w Salonach - Mohito" href="https://www.mohito.com/pl/pl/returns-stores">Zwrot i wymiana towaru - Sklepy Stacjonarne</a></li>
-                                <li><a title="Złóż zamówienie w sklepie" href="https://www.mohito.com/pl/pl/zamow-w-sklepie">Złóż zamówienie w sklepie</a></li>
-                                <li><a title="Regulamin usługi Omnichannel - Mohito" href="https://www.mohito.com/pl/pl/omnichannel-regulamin">Regulamin usługi Omnichannel</a></li>
-                                <li><a title="Karta Podarunkowa - Mohito" href="https://www.mohito.com/pl/pl/gift-card">Karty podarunkowe</a></li>
-                                <li><a title="Ceny w salonach stacjonarnych - Mohito" href="https://www.mohito.com/pl/pl/price-tags">Ceny w Sklepach Stacjonarnych</a></li>
+                                <li><a class="footer-button" title="storelocator"
+                                       href="https://www.mohito.com/pl/pl/storelocator">Znajdź sklep Mohito</a></li>
+                                <li><a title="Polityka Zwrotów w Salonach - Mohito"
+                                       href="https://www.mohito.com/pl/pl/returns-stores">Zwrot i wymiana towaru -
+                                    Sklepy Stacjonarne</a></li>
+                                <li><a title="Złóż zamówienie w sklepie"
+                                       href="https://www.mohito.com/pl/pl/zamow-w-sklepie">Złóż zamówienie w sklepie</a>
+                                </li>
+                                <li><a title="Regulamin usługi Omnichannel - Mohito"
+                                       href="https://www.mohito.com/pl/pl/omnichannel-regulamin">Regulamin usługi
+                                    Omnichannel</a></li>
+                                <li><a title="Karta Podarunkowa - Mohito" href="https://www.mohito.com/pl/pl/gift-card">Karty
+                                    podarunkowe</a></li>
+                                <li><a title="Ceny w salonach stacjonarnych - Mohito"
+                                       href="https://www.mohito.com/pl/pl/price-tags">Ceny w Sklepach Stacjonarnych</a>
+                                </li>
                             </ul>
                         </section>
                         <section class="accordion-cat">
                             <h4 class="accordion-cat-title">Moje konto</h4>
                             <ul class="accordion-cat-content">
-                                <li><a title="Zamówienia" href="https://www.mohito.com/pl/pl/sales/order/history/">Zamówienia</a></li>
-                                <li><a title="Ustawienia mojego konta" href="https://www.mohito.com/pl/pl/customer/account/edit/">Ustawienia mojego konta</a></li>
-                                <li><a title="Zmiana hasła" href="https://www.mohito.com/pl/pl/customer/account/edit/">Zmiana hasła</a></li>
+                                <li><a title="Zamówienia" href="https://www.mohito.com/pl/pl/sales/order/history/">Zamówienia</a>
+                                </li>
+                                <li><a title="Ustawienia mojego konta"
+                                       href="https://www.mohito.com/pl/pl/customer/account/edit/">Ustawienia mojego
+                                    konta</a></li>
+                                <li><a title="Zmiana hasła" href="https://www.mohito.com/pl/pl/customer/account/edit/">Zmiana
+                                    hasła</a></li>
                             </ul>
                         </section>
                         <section class="accordion-cat brand-cat">
@@ -651,14 +1136,16 @@
                             <ul class="accordion-cat-content">
                                 <li><a title="Kariera" href="http://www.lppsa.com/kariera">Kariera</a></li>
                                 <li><a title="Pressroom" href="http://media.lppsa.com/dlamediow">Pressroom</a></li>
-                                <li><a href="https://www.mohito.com/pl/pl/collection/polska-marka" target="_blank">Mohito - polskie korzenie, polska marka</a></li>
+                                <li><a href="https://www.mohito.com/pl/pl/collection/polska-marka" target="_blank">Mohito
+                                    - polskie korzenie, polska marka</a></li>
                             </ul>
                         </section>
                         <section class="accordion-cat">
                             <h4 class="accordion-cat-title">Newsletter</h4>
                             <div class="accordion-cat-content">
                                 <div class="footer-newsletter">
-                                    <a href="https://www.mohito.com/pl/pl/newsletter/" class="footer-button newsletter">Zapisz mnie do newslettera</a>
+                                    <a href="https://www.mohito.com/pl/pl/newsletter/" class="footer-button newsletter">Zapisz
+                                        mnie do newslettera</a>
                                 </div>
                             </div>
                         </section>
@@ -670,7 +1157,9 @@
     <div class="footer-bottom-bar">
         <div class="footer-container">
             <div class="footer-address" data-static="footer-address">
-                <p>LPP S.A., ul. Łąkowa 39/44, 80‑769 Gdańsk, Polska, zarejestrowana przez Sąd Rejonowy Gdańsk-Północ w&nbsp;Gdańsku, KRS:&nbsp;0000000778, kapitał zakładowy 3.662.246&nbsp;PLN (zapłacony w&nbsp;całości), NIP:&nbsp;583‑10‑14‑898, REGON:&nbsp;190852164</p>
+                <p>LPP S.A., ul. Łąkowa 39/44, 80‑769 Gdańsk, Polska, zarejestrowana przez Sąd Rejonowy Gdańsk-Północ w&nbsp;Gdańsku,
+                    KRS:&nbsp;0000000778, kapitał zakładowy 3.662.246&nbsp;PLN (zapłacony w&nbsp;całości), NIP:&nbsp;583‑10‑14‑898,
+                    REGON:&nbsp;190852164</p>
             </div>
             <div class="footer-copyrights" data-static="footer-copyright">
             </div>
