@@ -166,7 +166,19 @@
         form.amp-form-submit-success > .newsletter-form-wrapper {
             display: none;
         }
+    .newsletter-row{background-color:#f6f4f2;margin:0 auto 30px;padding:25px 30px;max-width:1260px;display:flex;flex-wrap:wrap;flex-direction:column;justify-content:center;align-content:space-between;height:270px}html[lang=ru] .newsletter-row{height:350px}.newsletter-row h2{font-size:1.7vw;font-weight:700;line-height:normal;text-transform:none;margin:0}.newsletter-row h2 small{font-size:1.1vw;display:block}.newsletter-row img{display:inline-block;max-height:100%}.newsletter-row .flex-a,.newsletter-row .flex-b,.newsletter-row .flex-c{width:33%}.newsletter-row .flex-b{height:100%;text-align:center}.newsletter-row form{width:32%;color:#222;margin:0}.newsletter-row form .newsletter-email,.newsletter-row form .newsletter-submit{line-height:30px;padding:4px 10px;border:2px solid #222;background-color:#f6f4f2;display:inline-block;vertical-align:top;border-radius:0}.newsletter-row form .newsletter-email{min-width:50%;width:calc(100% - 48px);font-size:16px;background:url(https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/newsletter/img/newsletter-email-icon.jpg) 10px center no-repeat;padding-left:50px;float:none;box-sizing:border-box}.newsletter-row form .newsletter-email::-webkit-input-placeholder{color:#555}.newsletter-row form .newsletter-email::-moz-placeholder{color:#555}.newsletter-row form .newsletter-email:-ms-input-placeholder{color:#555}.newsletter-row form .newsletter-email:-moz-placeholder{color:#555}.newsletter-row form .newsletter-email.error,.newsletter-row form .newsletter-email.has-error{margin-bottom:25px;border-color:red}.newsletter-row form .newsletter-email.error~.newsletter-submit{border-color:#ff0006}.newsletter-row form .newsletter-email.error~.newsletter-terms-label{padding-bottom:40px}.newsletter-row form .newsletter-email~label.error,.newsletter-row form .newsletter-terms~label.error{position:absolute;top:100%;right:0;text-transform:uppercase;color:#ff0006;font-weight:600;font-size:10px;margin-top:-20px;margin-right:2px}.newsletter-row form .newsletter-terms~label.error{margin-top:2px;line-height:15px}.newsletter-row form .newsletter-submit{border-left:0;background-size:50%;min-width:40px;cursor:pointer;font-size:20px;margin-left:0}.newsletter-row form .inputs{position:relative;height:auto}.newsletter-row form .terms{display:block;text-align:right;padding-right:2px;position:relative;margin-top:10px}.newsletter-row form .terms a{text-decoration:underline}.newsletter-row form .terms .newsletter-terms{position:absolute;z-index:-1;opacity:0;top:0;left:0}.newsletter-row form .terms .newsletter-terms:checked~.newsletter-terms-label,.newsletter-row form .terms .newsletter-terms:not(:checked)~.newsletter-terms-label{position:relative;padding-left:1.95em;cursor:pointer}.newsletter-row form .terms .newsletter-terms:checked~.newsletter-terms-label:before,.newsletter-row form .terms .newsletter-terms:not(:checked)~.newsletter-terms-label:before{content:'';position:absolute;left:0;top:-2px;width:10px;height:10px;border:2px solid #000;background:#f6f4f2}.newsletter-row form .terms .newsletter-terms:checked~.newsletter-terms-label:after,.newsletter-row form .terms .newsletter-terms:not(:checked)~.newsletter-terms-label:after{content:'✔';position:absolute;top:1px;left:2px;font-size:13px;line-height:.8;color:#222;transition:all .2s;font-family:Helvetica,Arial,sans-serif}.newsletter-row form .terms .newsletter-terms:not(:checked)~.newsletter-terms-label:after{opacity:0;transform:scale(0)}.newsletter-row form .terms .newsletter-terms:checked~.newsletter-terms-label:after{opacity:1;transform:scale(1)}.newsletter-row .rules{text-decoration:none;padding-bottom:2px;border-bottom:1px solid #222;display:inline-block}.newsletter-row .rules:hover{border-bottom:1px solid rgba(34,34,34,.5)}.newsletter-row .confirmation-text,.newsletter-row .mobile-only{display:none}.newsletter-row .confirmation-text{font-size:1.7vw}@media screen and (max-width:1024px){.newsletter-row h2{font-size:3.5vw}.newsletter-row h2 small{font-size:2vw}.newsletter-row .flex-a,.newsletter-row .flex-c{flex:0 0 50%;order:2;width:55%}html[lang=ru] .newsletter-row .flex-a,html[lang=ru] .newsletter-row .flex-c{flex:0 0 60%}.newsletter-row .flex-a div{display:flex;justify-content:center;height:100%;flex-direction:column}.newsletter-row .flex-b{flex:0 0 100%;order:1;max-height:100%;text-align:center;width:45%}html[lang=ru] .newsletter-row .flex-c{flex:0 0 40%}.newsletter-row .confirmation-text{font-size:2.5vw}}@media screen and (max-width:768px){.newsletter-row{margin:30px 15px;padding:15px 15px 30px}.newsletter-row form .newsletter-email{font-size:13px}}@media screen and (max-width:480px){.newsletter-row{display:block;height:auto}.newsletter-row h2{width:58%;font-size:5.5vw;line-height:5.5vw}.newsletter-row h2 small{font-size:65%;margin-top:15px}.newsletter-row img{width:37%;margin-left:4%}.newsletter-row form{width:100%;margin:25px 0 5px}.newsletter-row form .inputs,.newsletter-row form .terms{z-index:10}.newsletter-row .rules{margin-left:100%;transform:translateX(-105%);white-space:nowrap}.newsletter-row .flex-a{margin-top:20px}.newsletter-row .flex-a,.newsletter-row .flex-b,.newsletter-row .flex-c{width:auto}.newsletter-row .flex-b{display:none}.newsletter-row .mobile-only{display:block;float:right;width:37%;height:auto}.newsletter-row .mobile-only img{width:auto}.newsletter-row .confirmation-text{margin-top:30px;font-size:5.5vw}}
+    /* end of newsletter */
 
+
+
+
+    :root {
+      --color-primary: #005AF0;
+      --color-secondary: #00DCC0;
+      --color-text-light: #fff;
+      --space-2: 1rem;   /* 16px */
+      --box-shadow-1: 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 1px -1px rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    }
         .scrollToTop {
             color: var(--color-text-light);
             font-size: 1.4em;
@@ -199,6 +211,18 @@
             top: -72px;
             left: 0;
         }
+
+    .header-logo {
+      height: 45px;
+      width: 150px;
+      padding: 11px 9px 9px 9px;
+      box-sizing: border-box;
+    }
+
+    .header-logo amp-img {
+      max-width: 100%;
+      max-height: 100%;
+    }
     </style>
 
 </head>
@@ -209,7 +233,9 @@
 <header id="top" class="main-header flex">
     <section class="flex">
         <button type="button" on="tap:sidebar.toggle">&#9776;</button>
-        <h1>Mohito</h1>
+      <a class="header-logo" href="https://www.mohito.com/pl/pl/" title="Mohito">
+        <amp-img src="https://www.mohito.com/skin/frontend/mohito/default/img/logo.png" width="392" height="66"></amp-img>
+      </a>
     </section>
     <section class="flex">
         <a href="https://www.mohito.com/pl/pl/customer/account/login/uenc/aHR0cHM6Ly93d3cubW9oaXRvLmNvbS9wbC9wbC8,/"
@@ -358,6 +384,35 @@
     </div>
 </section>
 
+<article class="newsletter-row">
+    <div class="mobile-only">
+        <amp-img src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/newsletter/img/newsletter-bag.jpg" width="501" height="393" layout="responsive"></amp-img>
+    </div>
+    <h2 class="newsletter-title flex-a">
+        <div><span>Zapisz się do newslettera</span><small>Bądź na bieżąco z MOHITO</small></div>
+    </h2>
+    <form class="flex-c" id="homePageNewsletter" method="post" action-xhr="/components/amp-form/submit-form-input-text-xhr" target="_top">
+        <div class="newsletter-form-wrapper">
+            <div class="inputs">
+                <input type="email" class="newsletter-email ai-trigger-newsletter-email" name="email" id="email" placeholder="Enter e-mail" required><button type="submit" class="newsletter-submit">→</button>
+            </div>
+            <div class="terms">
+                <input type="checkbox" name="newsletter-terms" class="newsletter-terms ai-trigger-newsletter-terms" id="newsletterTerms" required>
+                <label class="newsletter-terms-label" for="newsletterTerms">
+                    Akceptuję <a href="https://www.mohito.com/pl/pl/newsletter-terms/" target="_blank">warunki newslettera</a>
+                </label>
+            </div>
+            <input type="hidden" name="subscriptionPlace" id="subscriptionPlace" value="home-page">
+        </div>
+        <div class="confirmation-text" submit-success>
+            <template type="amp-mustache">
+                Jeszcze jeden krok, potwierdź subskrypcję maila <strong>{{email}}</strong>!<br>
+                Aby potwierdzić subskrypcję wejdź na wskazaną skrzynkę mailową i kliknij link aktywacyjny.
+            </template>
+        </div>
+    </form>
+</article>
+
 <section class="instagram">
     <h2>
         @mohitofashion
@@ -429,36 +484,6 @@
     </script>
 </amp-animation>
 
-
-<article class="newsletter-row">
-    <h2 class="newsletter-title flex-a">
-        <div><span>Zapisz się do newslettera</span><small>Bądź na bieżąco z MOHITO</small></div>
-    </h2>
-    <div class="flex-b">
-        <amp-img src="https://www.mohito.com/media/SHARED/stronywizerunkowe/mohito/home/newsletter/img/newsletter-bag.jpg" width="501" height="393" layout="responsive"></amp-img>
-    </div>
-    <form class="flex-c" id="homePageNewsletter" method="post" action-xhr="/components/amp-form/submit-form-input-text-xhr" target="_top">
-        <div class="newsletter-form-wrapper">
-            <div class="inputs">
-                <input type="email" class="newsletter-email ai-trigger-newsletter-email" name="email" id="email" placeholder="Enter e-mail" required>
-                <button type="submit" class="newsletter-submit">→</button>
-            </div>
-            <div class="terms">
-                <input type="checkbox" name="newsletter-terms" class="newsletter-terms ai-trigger-newsletter-terms" id="newsletterTerms" required>
-                <label class="newsletter-terms-label" for="newsletterTerms">
-                    Akceptuję <a href="https://www.mohito.com/pl/pl/newsletter-terms/" target="_blank">warunki newslettera</a>
-                </label>
-            </div>
-            <input type="hidden" name="subscriptionPlace" id="subscriptionPlace" value="home-page">
-        </div>
-        <div class="confirmation-text" submit-success>
-            <template type="amp-mustache">
-                Jeszcze jeden krok, potwierdź subskrypcję maila <strong>{{email}}</strong>!<br>
-                Aby potwierdzić subskrypcję wejdź na wskazaną skrzynkę mailową i kliknij link aktywacyjny.
-            </template>
-        </div>
-    </form>
-</article>
 <div class="header-cnt">
     <h1>Mohito Shop Online</h1>
 </div>
