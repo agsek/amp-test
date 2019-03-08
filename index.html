@@ -610,7 +610,7 @@
             font-size: .5rem;
             text-align: center;
             padding: 5px 0;
-            margin: 10px 0;
+            margin: 0;
         }
 
         .header-cnt h1 {
@@ -632,6 +632,42 @@
 
         footer {
             background-color: var(--color-footer-bg);
+            margin: 0;
+            padding: 1rem .5rem;
+            text-align: center;
+        }
+
+        .contact-category-title {
+            margin: 0;
+        }
+
+        .contact-number {
+            margin: 0;
+            font-size: 1.7rem;
+            font-weight: 500;
+        }
+
+        .contact-form {
+            margin-top: 1rem;
+        }
+
+        .footer-button {
+            background-color: #222;
+            color: white;
+            display: block;
+            max-width: 250px;
+            margin: 10px auto 0 auto;
+            padding: 10px;
+            position: relative;
+        }
+
+        .footer-button:after {
+            content: '\2192';
+            font-size: 25px;
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+            top: 4px;
         }
 
         .header-logo amp-img {
@@ -650,7 +686,7 @@
             padding: 0;
             overflow: hidden;
             transition: all .3s ease-out;
-            font-size: 1.6em;
+            font-size: 18px;
             font-weight: 400;
         }
 
@@ -661,10 +697,12 @@
 
         .footer-links .accordion-cat-title {
             position: relative;
-            cursor: auto;
-            font-size: 1.6em;
+            font-size: 18px;
             font-weight: 400;
             padding: 10px 0;
+            background: none;
+            border: 0;
+            outline: none;
         }
 
         .footer-links .accordion-cat-title:after {
@@ -681,13 +719,6 @@
             background-size: contain;
             font-size: 2em;
         }
-
-        .footer-links .accordion-cat-content {
-            max-height: 0;
-            height: auto;
-            transition: max-height 350ms ease-out;
-        }
-
         .accordion ul {
             list-style: none;
             margin: 0;
@@ -732,7 +763,18 @@
             font-size: 16px;
             font-weight: 700;
         }
-
+        .footer .footer-button {
+            position: relative;
+            display: inline-block;
+            background: #222;
+            color: #f6f4f2;
+            box-sizing: border-box;
+            width: 100%;
+            line-height: 45px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+        }
         .footer .footer-button:after {
             display: inline-block;
             position: absolute;
@@ -745,6 +787,27 @@
             background-size: contain;
             height: 100%;
             width: 25px;
+        }
+        .footer-links .accordion-cat-content .footer-button.newsletter:after {
+            content: '';
+            font-size: 25px;
+            background: 0 0;
+            height: auto;
+            width: auto;
+        }
+
+        .footer-social ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-social .facebook {
+            background: url('https://www.mohito.com/skin/frontend/mohito/default/img/svg/fb-ico.svg') no-repeat center center/contain;
+            font-size: 0;
+            width: 20px;
+            height: 20px;
         }
     </style>
 
@@ -1088,7 +1151,6 @@
                 <div class="contact-category">
                     <h3 class="contact-category-title">Bezpłatna infolinia</h3>
                     <h5 class="contact-number"><a href="tel:800 800 022">800 800 022 </a></h5>
-                    <p class="contact-category-description">poniedziałek - piątek 9:00-19:00, sobota 10:00-17:00.</p>
                 </div>
                 <div class="contact-category contact-form" style="order: 1;">
                     <h3 class="contact-category-title">Formularz kontaktowy</h3>
