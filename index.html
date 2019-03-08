@@ -223,6 +223,102 @@
       max-width: 100%;
       max-height: 100%;
     }
+
+        .footer-links .accordion {
+            position: relative;
+            overflow: hidden;
+        }
+        .accordion li,
+        .footer-links .accordion-cat {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            transition: all .3s ease-out;
+            font-size: 1.6em;
+            font-weight: 400;
+        }
+        .footer-links .accordion-cat {
+            display: block;
+            box-sizing: border-box;
+        }
+        .footer-links .accordion-cat-title {
+            position: relative;
+            cursor: auto;
+            font-size: 1.6em;
+            font-weight: 400;
+            padding: 10px 0;
+        }
+        .footer-links .accordion-cat-title:after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: .25em;
+            right: 0;
+            display: inline-block;
+            transition: -webkit-transform 250ms ease-out;
+            transition: transform 250ms ease-out;
+            background: url(https://www.mohito.com/skin/frontend/mohito/default/img/svg/arrow-down.svg) center no-repeat;
+            background-size: contain;
+            font-size: 2em;
+        }
+        .footer-links .accordion-cat-content {
+            max-height: 0;
+            height: auto;
+            transition: max-height 350ms ease-out;
+        }
+        .accordion ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .footer-links ul li>a {
+            position: relative;
+            font-size: .8em;
+            padding: 5px 0 0;
+            margin-bottom: 5px;
+            display: inline-block;
+            text-decoration: none;
+            text-transform: none;
+            font-weight: 400;
+            color: #222;
+        }
+        .footer-links ul li>a:not(.footer-button):after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border-bottom: 1px solid #888;
+            -webkit-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+            transition: -webkit-transform .5s ease-in-out;
+            transition: transform .5s ease-in-out;
+        }
+        .footer-links .accordion-cat:last-child {
+            padding-right: 0;
+        }
+        .footer-links .accordion-cat-content .footer-button {
+            padding: 0;
+            margin: 10px 0;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .footer .footer-button:after {
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+        }
+        .footer-links .accordion-cat-content .footer-button:after {
+            content: '';
+            background: url(https://www.mohito.com/skin/frontend/mohito/default/img/svg/search.svg) center no-repeat;
+            background-size: contain;
+            height: 100%;
+            width: 25px;
+        }
     </style>
 
 </head>
